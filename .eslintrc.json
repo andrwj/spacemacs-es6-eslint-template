@@ -1,0 +1,42 @@
+{
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+  },
+  "extends": [
+		"eslint:recommended",
+    "plugin:vue/essential",
+    "airbnb-base",
+    "prettier"
+	],
+  "parserOptions": {
+  		"parser": "babel-eslint",
+      "sourceType": "module",
+      "ecmaVersion": 2015,
+      "allowImportExportEverywhere": true
+  },
+  "plugins": [ "vue","import", "node", "prettier", "promise", "standard", "html", "lodash", "filenames" ],
+  "rules": {
+    "indent": [ "error", 2 ],
+    "linebreak-style": [ "error", "unix" ],
+    "quotes": [ "error", "single", { "allowTemplateLiterals": true } ],
+    "semi": [ "error", "always" ],
+    "arrow-parens": [ 2, "as-needed", { "requireForBlockBody": true } ],
+		"space-before-function-paren": [0],
+    "key-spacing": [0],
+    "quote-props": 0,
+    "no-console": 0,
+    "new-cap": [0],
+    "no-multi-spaces": [0],
+    "no-shadow": [0],
+    "no-unused-vars": [1],
+    "no-use-before-define": [2, "nofunc"],
+		"vue/html-self-closing": "off",
+    "no-empty": [0],
+    "camelcase": [0],
+    "no-plusplus": [0],
+    "no-underscore-dangle": [0]
+  }
+}
